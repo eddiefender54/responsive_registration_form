@@ -1,0 +1,19 @@
+/*Universal Styling ----------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  hyphens: auto;
+}
+
+section {
+  padding: 2rem 2rem;
+}
+
