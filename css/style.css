@@ -144,6 +144,11 @@ button {
   margin-bottom: 10px;
 }
 
+button:hover {
+  background-color: #4bc9b8c5;
+  cursor: pointer;
+}
+
 fieldset {
   margin-bottom: 30px;
   border: none;
@@ -151,6 +156,7 @@ fieldset {
 
 .fieldset-wrapper {
   border-bottom: solid 3px #17171f;
+  background-image: linear-gradient(rgba(240, 240, 240, 0.671), rgb(255, 255, 255));
 }
 
 legend {
@@ -183,6 +189,8 @@ label.light {
 .button {
   display: flex;
   justify-content: center;
+  transition-property: opacity, left;
+  transition-duration: 3s, 5s, 2s, 1s;
   
 }
 
@@ -190,6 +198,14 @@ label.light {
   max-width: 50%;
 }
 
+.signup {
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+
+.signup:hover {
+  font-size: 36px;
+}
 
 
 @media screen and (min-width: 768px) {
