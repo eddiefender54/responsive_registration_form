@@ -90,14 +90,18 @@ select {
   background-color: #e8eeef;
   color: #494444;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin: 15px 0;
   border-radius: 8px;
+  transition-property: background-color;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   border: solid 2px #17171f;
+  background-color: antiquewhite;
+  transition-duration: 4s;
+  transition-delay: .5s;
 }
 
 textarea {
@@ -211,6 +215,15 @@ label.light {
   font-size: 36px;
 }
 
+.other-topics {
+  padding: 20px 0;
+}
+
+.textarea label {
+  font-size: 2em;
+}
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -221,12 +234,15 @@ label.light {
   .input-group,
   .input-group-zip {
     display: flex;
+    align-items: center;
   }
 
   .input-group label,
   .input-group-zip label {
     min-width: 150px;
   }
+
+  
 
 
 
