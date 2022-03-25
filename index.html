@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Code Review</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Work+Sans:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Work+Sans:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
+    </head>
 
 <body>
     <header>
         <h1>The Code Review</h1>
-        <h2>Signup for our newsletter</h2>
-        <p>Get the lastest news on how your code is doing right in your inbox</p>
+       
     </header>
 
-    <section>
-        <h2>Contact Information</h2>
         <form action="#" method="post">
-            <fieldset>
-                <label for="name">Full Name</label>
-                <input type="text" name="full-name" id="name">
-                <label for="email">Email Address</label>
-                <input type="email" name="email-address" id="email">
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone">
-                <label for="address1">Street Address</label>
-                <input type="text" name="street-address" id="address1">
-                <label for="city">City</label>
-                <input type="text" name="city" id="city">
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <optgroup label="Select a State">
-                        <option style="display:none"></option>
+            <div class="form-header">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the lastest news on how your code is doing right in your inbox</p>
+            </div>
+
+            <h2 class="contact">Contact Information</h2>
+
+            <fieldset class="fieldset-wrapper">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="full-name" id="name" placeholder="Required">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email-address" id="email" placeholder="Required">
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone">
+                </div>
+
+                <div class="input-group">
+                    <label for="address1">Street Address</label>
+                    <input type="text" name="street-address" id="address1">
+                </div>
+
+                <div class="input-group">  
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>  
+
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <select name="state" id="state" required>
+                        <option value='' disabled selected>Choose a State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -88,23 +107,46 @@
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
-                    </optgroup>
-                </select>
-                <label for="zip">Zip Code</label>
-                <input type="text" name="zip-code" id="zip">
+                    </select>
+                </div>
 
-
+                <div class="input-group-zip">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip-code" id="zip">
+                </div>
             </fieldset>
 
+            <h2>Newsletter</h2>
+            <fieldset class="newsletter">
+                <p>Select the newsletters you would like to recieve</p>
+
+                <input type="checkbox" id="html1" value="html-news" name="news">
+                <label for="html1" class="light">HTML News</label><br>
+                <input type="checkbox" id="css" value="css-news" name="news">
+                <label for="css" class="light">CSS News</label><br>
+                <input type="checkbox" id="java" value="javascript-news" name="news">
+                <label for="java" class="light">Javascript News</label><br>
+
+                <p>Newsletter Format</p>
+
+                <input type="radio" id="html2" value="format-html" name="format">
+                <label for="html2" class="light">HTML</label><br>
+                <input type="radio" id="text" value="format-text" name="format">
+                <label for="text" class="light">Plain Text</label>
+
+                <p>Other Topics you would like to hear about</p>
+
+                <textarea name="other-topics" id="topics"></textarea>
+
+                <div class="button">
+                    <button type="submit">Sign Up</button>
+                </div>
+
+            </fieldset>      
+            
+            <footer><small><i>Copyright The Code Review</i></small></footer>
+
         </form>
-
-        
-
-
-
-    </section>
-
-
-
-
+       
 </body>
+</html>
