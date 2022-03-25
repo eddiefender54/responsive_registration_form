@@ -39,7 +39,8 @@ form {
   margin-bottom: 10px;
 }
 
-.contact {
+.contact,
+.news-head {
   border-top: solid 2px #17171f;
   margin-top: 2px;
 }
@@ -48,9 +49,10 @@ h1 {
   text-align: center;
 }
 
-h2 {
+legend {
   color: #17171f;
   padding: 20px 0;
+  width: 100%;
 }
 
 p {
@@ -150,13 +152,12 @@ button:hover {
 }
 
 fieldset {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border: none;
 }
 
 .fieldset-wrapper {
-  border-bottom: solid 3px #17171f;
-  background-image: linear-gradient(rgba(240, 240, 240, 0.671), rgb(255, 255, 255));
+  background-image: linear-gradient( rgba(240, 240, 240, 0.301), rgb(255, 255, 255));
 }
 
 legend {
