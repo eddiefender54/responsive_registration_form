@@ -24,7 +24,7 @@ header {
 }
 
 form {
-  max-width: 300px;
+  max-width: 80%;
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 8px;
@@ -95,11 +95,16 @@ select {
   transition-property: background-color;
 }
 
+.fieldset-wrapper label,
+.contact{
+  color: #e8eeef;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
   border: solid 2px #17171f;
-  background-color: antiquewhite;
+  background-color: rgb(250, 243, 215);
   transition-duration: 4s;
   transition-delay: .5s;
 }
@@ -144,20 +149,20 @@ option {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc9b8;
+  background-color: #085423;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   min-width: 100%;
-  border: 1px solid #4bc9b8;
+  /* border: 1px solid #4bc9b8; */
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
 }
 
 button:hover {
-  background-color: #4bc9b8c5;
+  background-color: #085423ad;
   cursor: pointer;
 }
 
@@ -166,8 +171,8 @@ fieldset {
   border: none;
 }
 
-.fieldset-wrapper {
-  background-image: linear-gradient( rgba(240, 240, 240, 0.301), rgb(255, 255, 255));
+.top-field {
+  background-color: #085423;
 }
 
 
@@ -241,25 +246,6 @@ label.light {
   .input-group-zip label {
     min-width: 150px;
   }
-
-  
-
-
-
-
-
-
-  
-
-
-
-
- 
-  
-
-
-
-    
 
 }
 
