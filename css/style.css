@@ -114,7 +114,6 @@ select:focus {
 }
 
 .input-group:focus-within label {
-  color: #ff0000;
   font-weight: bold;
 }
 
