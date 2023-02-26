@@ -105,13 +105,23 @@ input[id*="zip"]{
 }
 
 input:focus,
-textarea:focus,
-select:focus {
+select:focus,
+textarea:focus
+{
   border: solid 4px #ff0000;
   background-color: rgb(250, 243, 215);
   transition-duration: 4s;
-  transition-delay: .2s;
+  transition-delay: .4s;
 }
+
+button:focus {
+  border: solid 4px #ff0000;
+  background-color: rgb(250, 243, 215);
+  color: #000;
+  transition-duration: 4s;
+  transition-delay: .4s;
+}
+
 
 .input-group:focus-within label {
   font-weight: bold;
