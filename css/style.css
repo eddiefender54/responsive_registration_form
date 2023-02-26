@@ -110,11 +110,16 @@ select:focus {
   border: solid 4px #ff0000;
   background-color: rgb(250, 243, 215);
   transition-duration: 4s;
-  transition-delay: .5s;
+  transition-delay: .2s;
 }
 
 .input-group:focus-within label {
   color: #ff0000;
+  font-weight: bold;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
   font-weight: bold;
 }
 
@@ -231,6 +236,10 @@ label.light {
 
 .other-topics {
   padding: 20px 0;
+}
+
+#other-topics {
+  font-size: .9em;
 }
 
 .textarea label {
