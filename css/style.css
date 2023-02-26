@@ -24,7 +24,7 @@ header {
 }
 
 form {
-  max-width: 80%;
+  max-width: 95%;
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 8px;
@@ -95,6 +95,10 @@ select {
   transition-property: background-color;
 }
 
+input[id*="zip"]{
+  width: 50%;
+}
+
 .fieldset-wrapper label,
 .contact{
   color: #e8eeef;
@@ -103,10 +107,15 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border: solid 2px #17171f;
+  border: solid 4px #ff0000;
   background-color: rgb(250, 243, 215);
   transition-duration: 4s;
   transition-delay: .5s;
+}
+
+.input-group:focus-within label {
+  color: #ff0000;
+  font-weight: bold;
 }
 
 textarea {
@@ -207,9 +216,9 @@ label.light {
   
 }
 
-.input-group-zip {
-  max-width: 50%;
-}
+/* .input-group-zip {
+  max-width: 60%;
+} */
 
 .signup {
   transition-property: font-size;
@@ -245,6 +254,10 @@ label.light {
   .input-group label,
   .input-group-zip label {
     min-width: 150px;
+  }
+
+  input[id*="zip"]{
+    width: 25%;
   }
 
 }
